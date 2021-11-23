@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background: #0B2434;
+  font-family: 'Karla', 'Inter', sans-serif;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #F5F5F5;
+  height: 320px;
+  width: 320px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+main h1{
+  font-family: Karla;
+  color: #2B283A;
+  font-size: 26px;
+  inline-height: 30px;
+  letter-spacing: -0.03em;
+  margin: 8px 0;
+}
+
+main p{
+  width: 233px;
+  font-family: Inter;
+  color: #4A4E74;
+  font-size: 13px;
+  inline-height: 16px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.rollBtn {
+  width: 93px;
+  height: 36px;
+  background: #5035FF;
   color: white;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 7px;
+  border: none;
+  cursor:pointer;
+  font-family: Karla
 }
 
-.App-link {
-  color: #61dafb;
+.rollBtn:focus {
+  outline: note;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rollBtn:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
+
+.dice{
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  grid-gap: 18px;
+  margin-bottom: 20px; 
+  
+}
+
+.die {
+  background: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Karla;
+  font-weight: bold;
+  font-size: 20px;
+  color: #2B283A;
+  line-height: 1.9em;
+  margin: 0;
+  cursor:pointer;
+}
+
+.isHeld{
+  background: #59E391;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Karla;
+  font-weight: bold;
+  font-size: 20px;
+  color: #2B283A;
+  line-height: 1.9em;
+  margin: 0;
+  cursor:pointer;
+}
+
+
+
